@@ -5,33 +5,21 @@ const Statistics = () => {
     const items = [ // Заглушка
         {
             id: 1,
-            name: 'Акция Одежды',
-            status: 'true',
-            product_name: 'Куртка',
-            market: 'WB',
-            cashback: '20%',
-            team: '4rth',
-            request: 'Синие куртки бесплатно'
+            request_name: 'Оплата 2000 рублей',
+            action_name: 'Акция Одежды',
+            public_id: '1',
+            request_date: 'WB',
+            amount: '2000',
+            status: 'Успешно',
         },
         {
             id: 2,
-            name: 'Акция Обувь',
-            status: 'false',
-            product_name: 'Куртка',
-            market: 'WB',
-            cashback: '20%',
-            team: '4rth',
-            request: 'Синие куртки бесплатно'
-        },
-        {
-            id: 3,
-            name: 'Акция Члены',
-            status: 'pedding',
-            product_name: 'Куртка',
-            market: 'WB',
-            cashback: '20%',
-            team: '4rth',
-            request: 'Синие куртки бесплатно'
+            request_name: 'Оплата 3000 рублей',
+            action_name: 'Акция Одежды',
+            public_id: '1',
+            request_date: 'WB',
+            amount: '3000',
+            status: 'Успешно',
         }
     ]
 
