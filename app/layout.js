@@ -10,10 +10,12 @@ export const metadata = {
 const RootLayout = ({ children }) => {
   return (
     <html lang="ru">
-      <body>
-        <div>
+      <body className="flex justify-center bg-slate-900">
+        <div className="flex flex-col w-[450px] my-3 mx-3">
           <Header />
+          <div className="mt-40">
             {children}
+          </div>
           <Footer />
         </div>
       </body>
