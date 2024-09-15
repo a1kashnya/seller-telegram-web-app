@@ -12,6 +12,7 @@ const Home = () => {
                 <Link className="block w-full bg-blue-500 text-blue-100 text-xs text-center rounded-2xl font-medium uppercase px-2 py-4" href="pages/help">Нужна помощь</Link>
                 <Link className="block w-full bg-blue-500 text-blue-100 text-xs text-center rounded-2xl font-medium uppercase px-2 py-4" href="pages/team">Моя команда</Link>
                 <Link className="block w-full bg-blue-500 text-blue-100 text-xs text-center rounded-2xl font-medium uppercase px-2 py-4" href="pages/profile">Мой профиль</Link>
+                <Link className="block w-full bg-blue-500 text-blue-100 text-xs text-center rounded-2xl font-medium uppercase px-2 py-4" href="pages/balance/history">История пополнений</Link>
             </div>
         </div>
     )
