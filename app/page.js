@@ -1,7 +1,7 @@
 import Home from "@/_components/home/Home"
 
 export const metadata = {
-  title: "SellerWebApp",
+  title: "SellerWebApp | Home",
   description: "SellerWebApp",
 }
 
