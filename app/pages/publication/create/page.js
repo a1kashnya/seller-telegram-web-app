@@ -1,4 +1,4 @@
-import Create from "@/_components/create/Create"
+import Create from "@/_components/publication/create/Create"
 
 export const metadata = {
   title: "SellerWebApp | Create",

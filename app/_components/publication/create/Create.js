@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 
-import CreateTeam from '@/_components/create/CreateTeam';
-import CreateForm from '@/_components/create/CreateForm';
-import CreateSuccess from '@/_components/create/CreateSuccess';
+import CreateTeam from '@/_components/publication/create/CreateTeam';
+import CreateForm from '@/_components/publication/create/CreateForm';
+import CreateSuccess from '@/_components/publication/create/CreateSuccess';
 
 const Create = () => {
     const [step, setStep] = useState('start');
