@@ -1,12 +1,12 @@
-import Create from "@/_components/publication/create/Create"
+import PublicationCreate from "@/_components/publication/create/PublicationCreate"
 
 export const metadata = {
   title: "SellerWebApp | Create",
   description: "SellerWebApp",
 }
 
-const CreatePage = () => {
-  return <Create />
+const PublicationCreatePage = () => {
+  return <PublicationCreate />
 }
 
-export default CreatePage
+export default PublicationCreatePage
