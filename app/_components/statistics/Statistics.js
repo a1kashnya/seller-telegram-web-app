@@ -6,18 +6,18 @@ const Statistics = () => {
         {
             id: 1,
             request_name: 'Оплата 2000 рублей',
-            action_name: 'Акция Одежды',
+            action_name: 'Скидки на куртки',
             public_id: '1',
-            request_date: 'WB',
+            request_date: '01.01.1999',
             amount: '2000',
             status: 'Успешно',
         },
         {
             id: 2,
             request_name: 'Оплата 3000 рублей',
-            action_name: 'Акция Одежды',
+            action_name: 'Скидки на обувь',
             public_id: '1',
-            request_date: 'WB',
+            request_date: '01.01.1999',
             amount: '3000',
             status: 'Успешно',
         }

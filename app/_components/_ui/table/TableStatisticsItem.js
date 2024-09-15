@@ -14,7 +14,7 @@ const TableStatisticsItem = ({ id, request_name, action_name, public_id, request
                 <li className="px-2 py-1"><b>Имя акции:</b> {action_name}</li>
                 <li className="bg-slate-700 px-2 py-1 rounded-md"><b>ID Публикации:</b> {public_id}</li>
                 <li className="px-2 py-1"><b>Дата:</b> {request_date}</li>
-                <li className="bg-slate-700 px-2 py-1 rounded-md"><b>Стоимость:</b> {amount}</li>
+                <li className="bg-slate-700 px-2 py-1 rounded-md"><b>Стоимость:</b> {amount}₽</li>
             </ul>
         </div>
     )
