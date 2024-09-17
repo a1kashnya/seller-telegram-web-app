@@ -1,5 +1,5 @@
-import Title from "@/_components/_ui/Title"
 import TableTeam from "@/_components/_ui/table/TableTeam"
+import Section from "@/_components/_ui/Section"
 
 const Team = () => {
     const items = [ // Заглушка
@@ -10,14 +10,13 @@ const Team = () => {
             balance: '1000'
         }
     ]
-    
+
     return (
-        <>
-            <Title name="Моя команда" btn />
-            <div className="grid gap-3 border-t border-b py-5 border-slate-800">
+        <Section title="Моя команда" backButton>
+            <div className="flex flex-col gap-4">
                 <TableTeam data={items} />
             </div>
-        </>
+        </Section>
     )
 }
 

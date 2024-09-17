@@ -2,7 +2,10 @@
 
 import { useState } from 'react';
 
-import Title from "@/_components/_ui/Title"
+import Section from "@/_components/_ui/Section"
+import Block from "@/_components/_ui/Block"
+import Button from '@/_components/_ui/Button'
+import Input from '@/_components/_ui/Input'
 
 const BalanceDepositPayment = ({ amount }) => {
     const [inputValue, setInputValue] = useState('');
@@ -16,20 +19,15 @@ const BalanceDepositPayment = ({ amount }) => {
         setDisplayValue(inputValue);
     }
     return (
-        <div>
-            <Title name="Пополнить баланс" btn />
-            <div className="grid gap-3 border-t border-b py-5 border-slate-800">
+        <Section title="Пополнение баланса" backButton>
                 {
                     displayValue === "other" ? (
-                        <>
-                            <div className="fle flex-col border-l-[6px] border-blue-500 bg-[#3b82f630] p-3 pl-4 rounded-lg text-white mb-2">
+                        <Block>
                                 <div className="mb-3">Введите сумму, которую хотите пополнить на баланс.</div>
-                                <div>- Минимальная: 200₽.</div>
-                                <div>- Максимальная: 5000₽.</div>
-                            </div>
-                            <input type="text" value={inputValue} onChange={handleInputChange} className="w-full bg-slate-900 border border-slate-800 rounded-2xl p-3 text-center text-slate-300" placeholder="Введите сумму" />
-                            <button onClick={handleButtonClick} className="block w-full bg-blue-500 text-blue-100 text-xs text-center rounded-2xl font-medium uppercase px-2 py-4">Оплатить</button>
-                        </>
+                                <div>- Минимальная: 200₽. <br></br>- Максимальная: 5000₽.</div>
+                            <input value={inputValue} onChange={handleInputChange} className="w-full bg-slate-900 border border-slate-800 rounded-2xl p-3 text-center text-slate-300" placeholder="Введите сумму" />
+                            <Button type="button" name="Оплатить" icon="CreditCardIcon" handle={handleButtonClick}>Оплатить</Button>
+                        </Block>
                     ) : (
                         <div className="fle flex-col border-l-[6px] border-blue-500 bg-[#3b82f630] p-3 pl-4 rounded-lg text-white mb-2">
                             <div>Вы хотите пополнить баланс на <b>{displayValue} рублей</b>.</div>
@@ -40,8 +38,7 @@ const BalanceDepositPayment = ({ amount }) => {
                         </div>
                     )
                 }
-            </div>
-        </div>
+        </Section>
     )
 }
 

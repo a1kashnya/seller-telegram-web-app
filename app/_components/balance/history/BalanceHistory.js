@@ -1,4 +1,4 @@
-import Title from "@/_components/_ui/Title"
+import Section from "@/_components/_ui/Section"
 import TableBalanceHistory from "@/_components/_ui/table/TableBalanceHistory"
 
 const BalanceHistory = () => {
@@ -17,12 +17,9 @@ const BalanceHistory = () => {
         }
     ]
     return (
-        <div>
-            <Title name="История пополнений" btn />
-            <div className="grid gap-3 border-t border-b py-5 border-slate-800">
-                <TableBalanceHistory data={history} />
-            </div>
-        </div>
+        <Section title="История оплат" backButton>
+            <TableBalanceHistory data={history} />
+        </Section>
     )
 }
 

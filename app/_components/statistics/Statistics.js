@@ -1,4 +1,4 @@
-import Title from "@/_components/_ui/Title"
+import Section from "@/_components/_ui/Section"
 import TableStatistics from "@/_components/_ui/table/TableStatistics"
 
 const Statistics = () => {
@@ -24,12 +24,9 @@ const Statistics = () => {
     ]
 
     return (
-        <>
-            <Title name="Статистика оплат" btn />
-            <div className="grid gap-3 border-t border-b py-5 border-slate-800">
-                <TableStatistics data={items} />
-            </div>
-        </>
+        <Section title="Статистика оплат" backButton>
+            <TableStatistics data={items} />
+        </Section>
     )
 }
 
