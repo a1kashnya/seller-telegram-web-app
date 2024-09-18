@@ -1,4 +1,3 @@
-import Title from "@/_components/_ui/Title"
 import TablePublish from "@/_components/_ui/table/TablePublish"
 import Section from "@/_components/_ui/Section"
 

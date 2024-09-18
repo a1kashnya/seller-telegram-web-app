@@ -1,7 +1,7 @@
 import Block from "@/_components/_ui/Info"
 import Button from "@/_components/_ui/Button"
 
-const TablePublish = ({ id, publish_name, status, product_name, market_name, cashback, team_name, request }) => {
+const TablePublish = ({ id, publish_name, status, product_name, market_name, cashback, team_name, request, buttons }) => {
     return (
         <Block>
             <div className="text-white overflow-hidden">
@@ -20,10 +20,15 @@ const TablePublish = ({ id, publish_name, status, product_name, market_name, cas
                 <li className="bg-[#ffffff0d] px-2 py-1 rounded-md"><b>Запрос:</b> {request}</li>
             </ul>
             <div className="flex flex-col justify-between gap-3 mt-5">
-                {status == 'Разрешена' ? (
-                    <Button type="link" name="Свободные даты" icon="CalendarDaysIcon" url={`/pages/publication/publish/selection/${id}`} />
-                ) : null}
-                <Button type="link" name="Редактировать" icon="PencilSquareIcon" bgColor="bg-yellow-500" textColor="text-yellow-950" url={`/pages/publication/publish/edit/${id}`} />
+                {buttons !== false && (
+                    <>
+                        {status == 'Разрешена' ? (
+                            <Button type="link" name="Свободные даты" icon="CalendarDaysIcon" url={`/pages/publication/publish/selection/${id}`} />
+                        ) : null}
+
+                        <Button type="link" name="Редактировать" icon="PencilSquareIcon" bgColor="bg-yellow-500" textColor="text-yellow-950" url={`/pages/publication/publish/edit/${id}`} />
+                    </>
+                )}
             </div>
         </Block>
     )

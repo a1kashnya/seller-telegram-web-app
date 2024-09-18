@@ -13,42 +13,48 @@
     },
     {
         "id": 3,
+        "name": "Управление публикациями",
+        "icon": "ClipboardDocumentListIcon",
+        "url": "pages/publication/management"
+    },
+    {
+        "id": 4,
         "name": "Статистика оплат",
         "icon": "ChartPieIcon",
         "url": "pages/statistics"
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Пополнить баланс",
         "icon": "BanknotesIcon",
         "url": "pages/balance/deposit"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "История пополнений",
         "icon": "TableCellsIcon",
         "url": "pages/balance/history"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Нужна помощь",
         "icon": "QuestionMarkCircleIcon",
         "url": "pages/help"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Мой профиль",
         "icon": "UserCircleIcon",
         "url": "pages/profile"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Моя команда",
         "icon": "UserGroupIcon",
         "url": "pages/team"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "Пригласить друга",
         "icon": "UserPlusIcon",
         "url": "pages/invite"
