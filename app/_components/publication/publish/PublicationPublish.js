@@ -1,16 +1,24 @@
-import TablePublish from "@/_components/_ui/table/TablePublish"
 import Section from "@/_components/_ui/Section"
+import Table from "@/_components/_ui/Table"
 
-const PublicationPublish = () => {
-    const items = [ // Заглушка
-        { id: 1, publish_name: 'Акция Одежды', status: 'Модерация', product_name: 'Куртка', market_name: 'WB', cashback: '20', team_name: '4rth', request: 'Синие куртки бесплатно' },
-        { id: 2, publish_name: 'Акция Обувь', status: 'Разрешена', product_name: 'Куртка', market_name: 'WB', cashback: '20', team_name: '4rth', request: 'Синие куртки бесплатно' },
-        { id: 3, publish_name: 'Акция Члены', status: 'Отклонена', product_name: 'Куртка', market_name: 'WB', cashback: '20', team_name: '4rth', request: 'Синие куртки бесплатно' }
+import { getPublicationById } from "@/_services/database"
+
+const PublicationPublish = async () => {
+    const data = await getPublicationById('123')
+
+    const columns = [
+        { Header: 'Публикация', accessor: 'publish_name' },
+        { Header: 'Статус', accessor: 'status' },
+        { Header: 'Продукт', accessor: 'product_name' },
+        { Header: 'Маркет', accessor: 'market_name' },
+        { Header: 'Кэшбэк %', accessor: 'cashback' },
+        { Header: 'Команда', accessor: 'team_name' },
+        { Header: 'Запрос', accessor: 'request' },
     ]
 
     return (
         <Section title="Опубликовать объявление/акцию" backButton>
-            <TablePublish data={items} />
+            <Table columns={columns} data={data} />
         </Section>
     )
 }
