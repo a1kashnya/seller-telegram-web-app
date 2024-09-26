@@ -5,7 +5,7 @@ import MenuData from '@/_data/HomeMenu.json'
 
 const Home = () => {
     return (
-        <Section title="Главное меню" backButton={false}>
+        <Section title="Главное меню">
             {MenuData && MenuData.map(({ id, name, icon, url }) => (
                 <Button key={id} type="link" name={name} icon={icon} url={url} />
             ))}

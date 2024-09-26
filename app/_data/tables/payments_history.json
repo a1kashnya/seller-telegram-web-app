@@ -1,0 +1,20 @@
+[
+    {
+        "Header": "ID",
+        "accessor": "id"
+    },
+    {
+        "Header": "Дата",
+        "accessor": "date",
+        "filter": true
+    },
+    {
+        "Header": "Сумма",
+        "accessor": "amount"
+    },
+    {
+        "Header": "Метод",
+        "accessor": "method",
+        "filter": true
+    }
+]

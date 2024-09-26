@@ -14,7 +14,7 @@ const Header = async () => {
   ]
 
   return (
-    <div className="fixed w-full left-0 top-0 px-3 shadow-lg shadow-slate-500/0 bg-slate-900 rounded-b-3xl pb-4 border-b border-slate-800 justify-self-center">
+    <div className="fixed w-full left-0 top-0 px-3 shadow-lg shadow-slate-500/0 bg-slate-900 rounded-b-3xl pb-4 border-b border-slate-800 justify-self-center z-50">
       <div className="rounded-3xl">
         <div className="text-center uppercase font-medium text-slate-100 p-4">Актуальные цены:</div>
         <div className="grid grid-cols-2 gap-3">

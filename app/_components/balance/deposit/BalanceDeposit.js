@@ -4,7 +4,7 @@ import Button from "@/_components/_ui/Button"
 
 const BalanceDeposit = () => {
     return (
-        <Section title="Пополнить баланс" backButton>
+        <Section title="Пополнить баланс" url="/">
             <Info>
                 Чтобы пополнить баланс нажмите на одну из кнопок ниже.
             </Info>

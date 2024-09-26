@@ -1,7 +1,7 @@
 import Team from "@/_components/team/Team"
 
 export const metadata = {
-  title: "SellerWebApp | Team",
+  title: "Seller | Team",
   description: "SellerWebApp",
 }
 

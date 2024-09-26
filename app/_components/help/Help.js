@@ -4,7 +4,7 @@ import Section from "@/_components/_ui/Section"
 const Help = () => {
   return (
 
-    <Section title="Нужда помощь?" backButton>
+    <Section title="Нужда помощь?" url="/">
       <Info>
         <span className="text-slate-300 mb-2 font-medium">Если у вас есть вопросы - можете обратиться в нашу тех. поддержку.</span>
         <span className="text-slate-300"><b>Контакты:</b> @support_lavka_dobbi</span>

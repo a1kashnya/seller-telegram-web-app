@@ -5,7 +5,7 @@ import Title from "@/_components/_ui/Title"
 const TeamUsersAdd = () => {
     return (
         <>
-            <Title name="Список пользователей" btn />
+            <Title name="Список пользователей" url="/pages/team" />
             <div className="grid gap-3 border-t border-b py-5 border-slate-800">
                 <div className="flex flex-col border-l-[6px] border-blue-500 bg-[#3b82f630] p-3 pl-4 rounded-lg text-white mb-2">
                     <span className="mb-2">Укажите ник пользователя в ТГ и проставьте ему права.</span>

@@ -1,0 +1,26 @@
+[
+    {
+        "Header": "ID Публикации",
+        "accessor": "id"
+    },
+    {
+        "Header": "Статус",
+        "accessor": "status",
+        "filter": true
+    },
+    {
+        "Header": "Дата публикации",
+        "accessor": "public_date",
+        "filter": true
+    },
+    {
+        "Header": "Время публикации",
+        "accessor": "public_time",
+        "filter": true
+    },
+    {
+        "Header": "Слоты",
+        "accessor": "public_slots",
+        "filter": true
+    }
+]

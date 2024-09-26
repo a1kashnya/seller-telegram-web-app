@@ -3,19 +3,19 @@
         "id": 1,
         "name": "Создать объявление/акцию",
         "icon": "PlusCircleIcon",
-        "url": "pages/publication/create"
+        "url": "pages/advertentie/create"
     },
     {
         "id": 2,
         "name": "Опубликовать объявление/акцию",
         "icon": "EyeIcon",
-        "url": "pages/publication/publish"
+        "url": "pages/advertentie/publish"
     },
     {
         "id": 3,
         "name": "Управление публикациями",
         "icon": "ClipboardDocumentListIcon",
-        "url": "pages/publication/management"
+        "url": "pages/publicate/management"
     },
     {
         "id": 4,

@@ -1,0 +1,37 @@
+[
+    {
+        "Header": "№ Акции",
+        "accessor": "id"
+    },
+    {
+        "Header": "Статус модерации",
+        "accessor": "status",
+        "filter": true
+    },
+    {
+        "Header": "Имя акции",
+        "accessor": "action_name"
+    },
+    {
+        "Header": "Имя товара",
+        "accessor": "product_name"
+    },
+    {
+        "Header": "Маркетплейс",
+        "accessor": "market_name",
+        "filter": true
+    },
+    {
+        "Header": "Кэшбэк %",
+        "accessor": "cashback"
+    },
+    {
+        "Header": "Имя команды",
+        "accessor": "team_name",
+        "filter": true
+    },
+    {
+        "Header": "Поисковой запрос",
+        "accessor": "request"
+    }
+]

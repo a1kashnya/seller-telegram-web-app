@@ -14,7 +14,7 @@ const Invite = () => {
         setIsModalOpen(!isModalOpen)
     }
     return (
-        <Section title="Пригласить друга" backButton>
+        <Section title="Пригласить друга" url="/">
             <Info>
                 <span className='mb-2 font-medium'>Чтобы открыть доступ к приглашениям - у вас должна быть хотя бы 1 успешно завершенная публикация.</span>
                 <span className='mb-2'>Максимум приглашений в день (5).</span>

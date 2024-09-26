@@ -1,0 +1,72 @@
+[
+    {
+        "name": "action_name",
+        "label": "Напишите имя акции. (Виден в вашем кабинете управления акциями!)",
+        "placeholder": "Имя акции",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "market",
+        "label": "Напишите на каком маркетплейс товар (ВБ, озон, Яндекс.Маркет, Мегамаркет)",
+        "placeholder": "Маркетплейс",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "categories",
+        "label": "Выберете категорию",
+        "placeholder": "Категория",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "product_name",
+        "placeholder": "Имя товара",
+        "label": "Имя товара",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "price",
+        "label": "Обычная цена товара. Например 1031,23",
+        "placeholder": "Обычная цена товара",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "scores",
+        "label": "Баллов в системе маркетплейса за отзыв? (если их нет - пишем 0)",
+        "placeholder": "Баллов в системе маркетплейса за отзыв",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "cashback",
+        "label": "% кешбека, который будет в акции. (Минимальный % = 50)",
+        "placeholder": "% кешбека, который будет в акции",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "request",
+        "label": "Введите поисковой запрос, по которому клиенты будут искать ваш товар",
+        "placeholder": "Поисковой запрос",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "search_result",
+        "label": "Пришлите ссылку на скриншот с примером как должна получится поисковая выдача.",
+        "placeholder": "Как должна получится поисковая выдача",
+        "type": "text",
+        "required": true
+    },
+    {
+        "name": "photo",
+        "label": "Загрузите картинку для публикации. Если хотите использовать несколько фотографий своего товара, то нужно уместить всё в одну картинку. Максимальный вес 3 мб",
+        "placeholder": "Фото публикации",
+        "type": "text",
+        "required": true
+    }
+]

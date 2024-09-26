@@ -1,0 +1,36 @@
+[
+    {
+        "Header": "ID",
+        "accessor": "id"
+    },
+    {
+        "Header": "Название запроса",
+        "accessor": "request_name",
+        "filter": true
+    },
+    {
+        "Header": "Название акции",
+        "accessor": "action_name",
+        "filter": true
+    },
+    {
+        "Header": "ID Публикации",
+        "accessor": "public_id",
+        "filter": true
+    },
+    {
+        "Header": "Дата запроса",
+        "accessor": "request_date",
+        "filter": true
+    },
+    {
+        "Header": "Сумма",
+        "accessor": "amount",
+        "filter": true
+    },
+    {
+        "Header": "Статус",
+        "accessor": "status",
+        "filter": true
+    }
+]

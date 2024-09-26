@@ -1,16 +1,28 @@
-import "./globals.css";
+"use client"
+
+import "./globals.css"
+import { motion, AnimatePresence } from 'framer-motion';
+import { usePathname } from 'next/navigation';
+
 import Header from "@/_components/_layout/Header"
 import Footer from "@/_components/_layout/Footer"
 
 const RootLayout = ({ children }) => {
+  const pathname = usePathname();
+
   return (
     <html lang="ru">
       <body className="flex justify-center bg-slate-900">
         <div className="flex flex-col w-[450px] my-3 mx-3">
           <Header />
-          <div className="mt-40">
-            {children}
-          </div>
+          <AnimatePresence mode="wait">
+            <motion.div key={pathname}
+              initial={{ opacity: 0, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2 }} className="mt-40">
+              {children}
+            </motion.div>
+          </AnimatePresence>
           <Footer />
         </div>
       </body>
