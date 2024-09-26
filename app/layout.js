@@ -1,17 +1,21 @@
 "use client"
 
 import "./globals.css"
-import { motion, AnimatePresence } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import { motion, AnimatePresence } from 'framer-motion'
+import { usePathname } from 'next/navigation'
+import Script from 'next/script'
 
 import Header from "@/_components/_layout/Header"
 import Footer from "@/_components/_layout/Footer"
 
 const RootLayout = ({ children }) => {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
     <html lang="ru">
+      <head>
+        <Script src="https://telegram.org/js/telegram-web-app.js" />
+      </head>
       <body className="flex justify-center bg-slate-900">
         <div className="flex flex-col w-[450px] my-3 mx-3">
           <Header />
