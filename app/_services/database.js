@@ -94,4 +94,16 @@ const getPublicateById = async (id) => {
     return res.json();
 }
 
-export {getAdvertentieById, getTeamsById, getPaymentsById, getPaymentsHistoryById, getTeam, getTeamUsers, getUserById, getPublicateById}
+const getRequestsById = async (id) => {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/user/requests/${id}`, {
+        cache: 'no-store',
+    })
+
+    if (!res.ok) {
+        throw new Error('Ошибка получения истории оплат');
+    }
+
+    return res.json();
+}
+
+export {getAdvertentieById, getTeamsById, getPaymentsById, getPaymentsHistoryById, getTeam, getTeamUsers, getUserById, getPublicateById, getRequestsById}

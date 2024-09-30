@@ -57,6 +57,24 @@ const Filter = ({ columns, data, onFilterChange }) => {
             ...provided,
             color: '#fff',
         }),
+        singleValue: (provided, state) => ({
+            ...provided,
+            color: '#fff', // Изменение цвета текста выбранного элемента
+        }),
+        dropdownIndicator: (provided) => ({
+            ...provided,
+            color: '#fff', // Цвет стрелки
+            '&:hover': {
+                color: '#ffffff90', // Цвет стрелки при наведении
+            }
+        }),
+        clearIndicator: (provided) => ({
+            ...provided,
+            color: '#fff', // Цвет крестика
+            '&:hover': {
+                color: '#ffffff90', // Цвет крестика при наведении
+            }
+        }),
     };
 
     return (

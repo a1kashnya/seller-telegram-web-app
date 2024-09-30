@@ -2,7 +2,13 @@ import Block from "@/_components/_ui/Block"
 import Button from "@/_components/_ui/Button"
 import Icon from "@/_components/_ui/Icon"
 
+import TableStatus from '@/_data/TableStatus.json';
+
 const Table = ({ columns, data, type }) => {
+    const getStatusColor = (status) => {
+        return TableStatus.colors[status] || 'bg-gray-400';
+    }
+
     return (
         <div className="flex flex-col gap-5">
             {data.map((row) => (
@@ -11,7 +17,7 @@ const Table = ({ columns, data, type }) => {
                         <div className="text-white overflow-hidden">
                             <div className="flex justify-between items-center">
                                 {row.action_name ? (<div className="text-xl font-medium">{row.action_name}</div>) : null}
-                                <div className={`${row.status === 'Разрешена' || row.status === 'Активная' || row.status === 'Завершена полностью' || row.status === 'Успешно' ? 'bg-green-600' : 'bg-red-500'} px-3 text-xs py-1 rounded-lg`}>
+                                <div className={`${getStatusColor(row.status)} px-3 text-xs py-1 rounded-lg`}>
                                     {row.status}
                                 </div>
                             </div>
@@ -45,6 +51,12 @@ const Table = ({ columns, data, type }) => {
                     {type === 'management-index' && row.status === 'Активная' && (
                         <div className="flex flex-col justify-between gap-3">
                             <Button type="link" name="Завершить публикацию" icon="PencilSquareIcon" url={`/pages/publicate/management/${row.id}`} />
+                        </div>
+                    )}
+
+                    {type === 'requests' && (
+                        <div className="flex flex-col justify-between gap-3">
+                            <Button type="link" name="Открыть" icon="PencilSquareIcon" url={`/pages/publicate/management/${row.id}`} />
                         </div>
                     )}
                 </Block>

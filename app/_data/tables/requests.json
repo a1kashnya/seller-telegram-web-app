@@ -1,0 +1,26 @@
+[
+    {
+        "Header": "ID Запроса",
+        "accessor": "id"
+    },
+    {
+        "Header": "Статус",
+        "accessor": "status",
+        "filter": true
+    },
+    {
+        "Header": "Тип запроса",
+        "accessor": "type",
+        "filter": true
+    },
+    {
+        "Header": "№ Акции",
+        "accessor": "action_id",
+        "filter": true
+    },
+    {
+        "Header": "Имя товара",
+        "accessor": "action_name",
+        "filter": true
+    }
+]
