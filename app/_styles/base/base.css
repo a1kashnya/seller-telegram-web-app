@@ -1,0 +1,7 @@
+@layer base {
+    * {
+        font-family: "Cera Pro";
+        box-sizing: border-box;
+        letter-spacing: .2px;
+    }
+}
