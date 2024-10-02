@@ -24,6 +24,7 @@
     },
     {
         "name": "product_name",
+        "placeholder": "Имя товара",
         "label": "Имя товара",
         "type": "text",
         "required": true
