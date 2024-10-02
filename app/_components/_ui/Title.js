@@ -7,7 +7,7 @@ const Title = ({ name, url  }) => {
             <h1 className={`${url ? 'text-left' : 'text-center w-full'} uppercase text-white font-medium text-sm text-left py-1 text-ellipsis whitespace-nowrap overflow-hidden`}>{name}</h1>
             {url && (
                     <Link href={url} className="flex flex-row gap-1 items-center justify-center bg-yellow-400 rounded-lg px-3 py-1 text-slate-800 font-medium text-xs">
-                        <Icon name="ArrowLeftCircleIcon" size={6} />
+                        <Icon name="ArrowLeftCircleIcon" />
                     </Link>
                 )
             }
