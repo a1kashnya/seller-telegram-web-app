@@ -1,8 +1,8 @@
 import AdvertentieSelection from "@/_components/advertentie/publish/selection/AdvertentieSelection"
 
 export const metadata = {
-  title: "SellerWebApp | Edit publication",
-  description: "SellerWebApp",
+  title: `${process.env.NEXT_PUBLIC_APP_NAME} | Редактирование`,
+  description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
 }
 
 const AdvertentieSelectionPage = ({ params }) => {

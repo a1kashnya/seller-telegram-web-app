@@ -1,8 +1,8 @@
 import TeamUsersAdd from "@/_components/team/TeamUsersAdd"
 
 export const metadata = {
-  title: "Seller | Add Team User",
-  description: "SellerWebApp",
+  title: `${process.env.NEXT_PUBLIC_APP_NAME} | Добавление пользлвателя`,
+  description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
 }
 
 const TeamUsersAddPage = () => {

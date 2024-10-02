@@ -1,9 +1,9 @@
 import Help from "@/_components/help/Help"
 
 export const metadata = {
-    title: "SellerWebApp | Help",
-    description: "SellerWebApp",
-  }
+  title: `${process.env.NEXT_PUBLIC_APP_NAME} | Помощь`,
+  description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
+}
 
 const HelpPage = () => {
   return <Help />

@@ -1,8 +1,8 @@
 import Requests from "@/_components/requests/Requests"
 
 export const metadata = {
-  title: "Seller | Payment Statistics",
-  description: "SellerWebApp",
+  title: `${process.env.NEXT_PUBLIC_APP_NAME} | Запросы на проверку`,
+  description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
 }
 
 const RequestsPage = () => {
