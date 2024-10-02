@@ -1,6 +1,6 @@
 "use client"
 
-import "./globals.css"
+import "@/_styles/globals.css"
 import { motion, AnimatePresence } from 'framer-motion'
 import { usePathname } from 'next/navigation'
 import Script from 'next/script'
@@ -20,10 +20,7 @@ const RootLayout = ({ children }) => {
         <div className="flex flex-col w-[450px] my-3 mx-3">
           <Header />
           <AnimatePresence mode="wait">
-            <motion.div key={pathname}
-              initial={{ opacity: 0, y: 0 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.2 }} className="mt-40">
+            <motion.div key={pathname} initial={{ opacity: 0, y: 0 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.2 }} className="mt-40">
               {children}
             </motion.div>
           </AnimatePresence>
@@ -31,7 +28,7 @@ const RootLayout = ({ children }) => {
         </div>
       </body>
     </html>
-  );
+  )
 }
 
 export default RootLayout
